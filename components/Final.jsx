@@ -11,11 +11,11 @@ export default function Final({ value }) {
             Votre kit pompe à chaleur est prêt!
           </h1>
           <p className="mt-6 mb-6 text-lg leading-8 text-brown">
-            Vous aves une <b>{value.stepValue1}</b> que vous chauffez à
-            temperature <b>{value.stepValue2} </b>à chauffage{" "}
-            <b>{value.stepValue3}</b>. Vous consommez <b>{value.stepValue4}</b>{" "}
-            kwh. Nous avons selectionné pour vous la{" "}
-            <b>{value.chosenPompe.title}</b>.
+            Vous aves une <b>{value.batimentValue}</b> que vous chauffez à
+            temperature <b>{value.temperatureValue} </b>à chauffage{" "}
+            <b>{value.chauffageValue}</b>. Vous consommez{" "}
+            <b>{value.consommationValue}</b> kwh. Nous avons selectionné pour
+            vous la <b>{value.chosenPompe.title}</b>.
           </p>
           <Link
             className="rounded-md bg-chocolate px-3.5 py-3 text-md font-semibold text-white shadow-sm hover:bg-amber focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
