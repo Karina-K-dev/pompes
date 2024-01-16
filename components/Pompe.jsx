@@ -6,7 +6,7 @@ export default function Pompe({ value, onFinishClick }) {
   };
   return (
     <div className="min-h-screen text-center flex flex-col items-center justify-center">
-      <div className="flex justify-between items-start w-full max-w-4xl mx-auto">
+      <div className="mt-20 flex justify-between items-start w-full max-w-4xl mx-auto">
         <div className="w-1/2 pr-8">
           <h1 className="text-3xl font-bold tracking-tight text-black-500 sm:text-4xl">
             Merci pour ces informations!

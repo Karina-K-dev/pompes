@@ -12,13 +12,13 @@ export default function Batiment({
   };
 
   return (
-    <div className="min-h-screen text-center flex flex-col items-center justify-center">
-      <h1 className="text-3xl font-bold tracking-tight text-dkbrown sm:text-4xl mb-10">
+    <div className="min-h-screen text-center flex flex-col items-center justify-center sm:gap-10">
+      <h1 className="mt-20 text-3xl font-bold tracking-tight text-dkbrown sm:text-4xl mb-10">
         Quel type de bâtiment souhaitez vous équiper?
       </h1>
-      <div className="flex justify-center items-center gap-10">
+      <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-10">
         <div
-          className={`flex-shrink-0 w-1/3 max-w-xs overflow-hidden rounded-lg shadow-lg ${
+          className={`flex-shrink-0 w-1/3 max-w-xs overflow-hidden rounded-lg shadow-lg  ${
             value === "maison individuelle" ? "border-4 border-chocolate" : ""
           }`}
           onClick={() => handleClick("maison individuelle")}
@@ -31,7 +31,7 @@ export default function Batiment({
             />
             <div className="px-6 py-4">
               <h4 className="mb-3 text-xl font-semibold tracking-tight text-chocolate">
-                Maison individuelle
+                Maison
               </h4>
             </div>
           </button>
