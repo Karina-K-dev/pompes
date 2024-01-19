@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
-export default function Chauffage({ value, onChange, preventUserClick }) {
+export default function Chauffage({ value, onChange, enableUserClick }) {
   const handleClick = (value) => {
     onChange(value);
-    preventUserClick();
+    enableUserClick();
   };
   return (
     <div className="min-h-screen text-center flex flex-col items-center justify-center sm:gap-10">

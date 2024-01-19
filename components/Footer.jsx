@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 export default function Footer({
   currentPage,
@@ -20,13 +20,6 @@ export default function Footer({
     onPrevClick();
     regress();
   };
-  useEffect(() => {
-    if (!isEnabled) {
-      document.querySelector(".btn-next").setAttribute("disabled", "");
-    } else {
-      document.querySelector(".btn-next").removeAttribute("disabled");
-    }
-  }, [isEnabled]);
 
   return (
     <footer className="fixed bottom-0 w-full bg-milky">
@@ -45,6 +38,7 @@ export default function Footer({
         <button
           className="btn-next px-4 py-2 rounded text-white bg-dkbrown hover:chocolate transition duration-300"
           onClick={handleSuivantClick}
+          disabled={!isEnabled}
         >
           Suivant
         </button>

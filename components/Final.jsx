@@ -14,7 +14,7 @@ export default function Final({ value }) {
             Vous aves une <b>{value.batimentValue}</b> que vous chauffez à
             temperature <b>{value.temperatureValue} </b>à chauffage{" "}
             <b>{value.chauffageValue}</b>. Vous consommez{" "}
-            <b>{value.consommationValue}</b> kwh. Nous avons selectionné pour
+            <b>{value.consommationValue}</b> kwh/an. Nous avons selectionné pour
             vous la <b>{value.chosenPompe.title}</b>.
           </p>
           <Link

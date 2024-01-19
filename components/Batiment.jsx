@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function Batiment({
   value,
   onChange,
-  preventUserClick,
+  enableUserClick,
   isEnabled,
 }) {
   const handleClick = (value) => {
     onChange(value);
-    preventUserClick();
+    enableUserClick();
   };
 
   return (

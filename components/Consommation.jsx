@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
-export default function Consommation({ value, onChange, preventUserClick }) {
+export default function Consommation({ value, onChange, enableUserClick }) {
   const handleInputChange = (slider) => {
     onChange(slider.target.value);
-    preventUserClick();
+    enableUserClick();
     console.log("change");
   };
   return (

@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function TemperatureSlider({
   value,
   onChange,
-  preventUserClick,
+  enableUserClick,
 }) {
   const handleTemperatureChange = (event) => {
     onChange(event.target.value);
-    preventUserClick();
+    enableUserClick();
   };
 
   return (

@@ -71,7 +71,7 @@ export default function Stepper() {
   const [progress, setProgress] = useState(0);
   const [isEnabled, setIsEnabled] = useState(false);
 
-  const preventUserClick = () => {
+  const enableUserClick = () => {
     setIsEnabled(true);
   };
 
@@ -112,7 +112,7 @@ export default function Stepper() {
         <Batiment
           value={batimentValue}
           onChange={setBatimentValue}
-          preventUserClick={preventUserClick}
+          enableUserClick={enableUserClick}
           isEnabled={isEnabled}
         />
       )}
@@ -120,21 +120,21 @@ export default function Stepper() {
         <Temperature
           value={temperatureValue}
           onChange={setTemperatureValue}
-          preventUserClick={preventUserClick}
+          enableUserClick={enableUserClick}
         />
       )}
       {currentStep === 3 && (
         <Chauffage
           value={chauffageValue}
           onChange={setChauffageValue}
-          preventUserClick={preventUserClick}
+          enableUserClick={enableUserClick}
         />
       )}
       {currentStep === 4 && (
         <Consommation
           value={consommationValue}
           onChange={setConsommationValue}
-          preventUserClick={preventUserClick}
+          enableUserClick={enableUserClick}
         />
       )}
       {currentStep === 5 && (
